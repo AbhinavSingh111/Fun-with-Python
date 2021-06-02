@@ -1,0 +1,5 @@
+# pip install pyshorteners
+import pyshorteners as psh
+your_url="https://www.google.com/search?q=kbps+to+mbps&rlz=1C1CHZN_enIN918IN918&oq=kbps+to+&aqs=chrome.0.0j69i57j0l8.4603j0j7&sourceid=chrome&ie=UTF-8" #the url you want to shorten
+short_url=psh.Shortener().tinyurl.short(your_url)
+print(short_url)
