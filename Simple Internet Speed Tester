@@ -1,0 +1,7 @@
+# pip install speedtest-cli
+import speedtest
+test_speed = speedtest.Speedtest()
+download = round((test_speed.download() / 1e+6),2) # to convert form bits to mbps we divide by 1e+6
+upload = round((test_speed.upload() / 1e+6),2)
+print(f'Your Download speed is : {download} mbps')
+print(f'Your Upload speed is : {upload} mbps')
